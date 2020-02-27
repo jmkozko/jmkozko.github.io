@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+  }
+  
+html {
+    height: 100%;
+    height: auto;
+    min-height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 1em;
+  background-image: linear-gradient(to bottom, rgb(224, 225, 240), rgb(230, 234, 255));
+  background-attachment: scroll;
+}
+
+.progress-container {
+  margin: 2em auto;
+  padding: 1em;
+  width: 20em;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(yellow, blue);
+  box-shadow: 2px 2px rgb(166, 166, 185);
+}
+
+h1 {
+  font-family: Arial;
+  letter-spacing: -1px;
+  text-align: center;
+  text-shadow: 1px 1px #999;
+}
+
+.divider {
+  height: 5px;
+  padding-bottom: 1em;
+  border-top: 1px solid #FFF;
+}
+
+.progress {
+
+  width: 100%;
+  height: 2em;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 2px 2px #AAA;
+  background-color: white;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #3333FF;
+  box-shadow: 2px 0px #DDDDFF;
+}
+
+.micro-boxes {
+  width: 100%;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+[class^='micro-box-'] {
+  width: 3%;
+  height: 0.5em;
+  border: 1px solid #AAA;
+  border-radius: 5px;
+  box-shadow: 1px 1px #DDD;
+  background-color: white;
+}
+
+.sub-progress {
+  width: 100%;
+  height: 0.5em;
+  margin-top: 2em;
+  border: 1px solid #AAA;
+  border-radius: 5px;
+  box-shadow: 2px 2px #DDD;
+  background-color: white;
+}
+
+.sub-progress-bar {
+  width: 0%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 0px #DDDDDD;
+  background-color: rgb(190, 190, 164);
+
+}
+
+.sub-boxes {
+  width: 100%;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+[class^='sub-box-'] {
+  width: 16%;
+  height: 2em;
+  margin-top: 1em;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 2px 2px #DDD;
+  background-color: white;
+}
+
+label {
+  font-family: Arial;
+  color: white;
+  text-align: left;
+  text-shadow: 1px 1px #888;
+}
+
+input {
+  color: #444;
+  font-size: 1em;
+  display: block;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 2px 2px #DDD;
+  margin-bottom: 0.5em;
+}
+
+button {
+  width: 10em;
+  margin-top: 1em;
+  background-color: #FFF;
+  text-shadow: 1px 1px #AAA;
+  box-shadow: 0 3px 5px #999;
+}
+
+.bar-container:hover .divider {
+  border-color: #333;
+  border-width: 1px;
+}
+
+.bar-container:hover .progress {
+  border-color: #444;
+  border-width: 1px;
+}
+
+.bar-container:hover .sub-progress {
+  border-color: #444;
+  border-width: 1px;
+}
